@@ -19,7 +19,7 @@ export default function Login() {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/landing-page");
+      navigate("/landingpage");
     } catch (err: any) {
       setError(err.message || "Invalid email or password");
     } finally {
